@@ -72,4 +72,16 @@ public class DateSorter {
   private boolean isMonthContainsR(LocalDate date) {
     return date.getMonth().toString().toLowerCase().contains("r");
   }
+
+  public static void main(String[] args) {
+    var unsortedDates = new ArrayList<LocalDate>();
+    unsortedDates.add(LocalDate.of(2005, 01, 02));
+    unsortedDates.add(LocalDate.of(2007, 01, 01));
+    unsortedDates.add(LocalDate.of(2032, 05, 03));
+    unsortedDates.add(LocalDate.of(2004, 07, 01));
+
+    var dateSorter = new DateSorter();
+
+    System.out.println(dateSorter.sortDates(unsortedDates));
+  }
 }

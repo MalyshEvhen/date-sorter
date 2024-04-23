@@ -25,7 +25,7 @@ Example:
 
     public class Main {
         public static void main(String[] args) {
-            var unsortedDates = new ArrayList<>();
+            var unsortedDates = new ArrayList<LocalDate>();
             unsortedDates.add(LocalDate.of(2004, 7, 1));
             unsortedDates.add(LocalDate.of(2005, 1, 2));
             unsortedDates.add(LocalDate.of(2007, 1, 1));

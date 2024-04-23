@@ -51,11 +51,9 @@ public class DateSorter {
    * @return the collection of dates now sorted as per the spec
    */
   public Collection<LocalDate> sortDates(List<LocalDate> unsortedDates) {
-    var start = LocalTime.now();
     var sorted = unsortedDates.stream()
         .sorted(this.dateComparator())
         .toList();
-    System.out.println("Stream sort: " + LocalTime.now().minusNanos(start.toNanoOfDay()).toNanoOfDay());
     return sorted;
   }
 
